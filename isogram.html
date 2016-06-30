@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+    function isIsogram(str){
+      var str = str.toLowerCase();
+      str = str.split('');
+      str = str.sort();
+      // console.log(str);
+
+      for (var i = 0; i < str.length; i++){
+        // console.log(str[i]);
+
+        if(str[i] == str[i+1]){
+          console.log("Ce mot n'est pas un isogram");
+          return false;
+        }
+        else{
+          console.log(str);
+          console.log("Ce mot est un isogram");
+        }
+      }
+      return true;
+    }
+
+    isIsogram("moOse");
+
+    </script>
+
+  </body>
+</html>

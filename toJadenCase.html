@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+    function toJadenCase(str) {
+      var mot = str.split(" ");
+      var finTaMereLaPute = "";
+
+      for (var i = 0; i <= mot.length; i++){
+        var letters = mot[i].split("");
+        // console.log(letters);
+        letters[0] = letters[0].toUpperCase();
+        console.log(letters);
+        mot[i] = letters.join('')
+        console.log(mot[i]);
+        // console.log(mot.join(' '));
+
+      }
+      finTaMereLaPute = mot[1].join(' ');
+      console.log(finTaMereLaPute);
+    }
+
+    toJadenCase("salut la compagnie");
+
+    </script>
+
+  </body>
+</html>
